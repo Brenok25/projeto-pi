@@ -29,9 +29,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // modais
 
-var modal = document.querySelector(".modal-cad-user");
-var open_modal = document.querySelector(".open_modal");
-var closeButton = document.querySelector(".close-button");
+var modalUser = document.querySelector(".modal-cad-user");
+var open_modalUser = document.querySelector(".open_modalUser");
+var closeButtonUser = document.querySelector(".close-button-user");
 var changeOpacidad = document.querySelector(".navega-color");
 
 
@@ -40,22 +40,22 @@ function backgroundChange(){
   changeOpacidad.classList.remove("navega-change")
 }
 
-function toggleModal() {
-    modal.classList.toggle("show-modal");
+function toggleModalUser() {
+    modalUser.classList.toggle("show-modal");
     changeOpacidad.classList.add("navega-change")
 
 }
 
 function windowOnClick(event) {
-    if (event.target === modal) {
-        toggleModal();
+    if (event.target === User) {
+        toggleModalUser();
         changeOpacidad.classList.remove("navega-change")
     }
 }
 
-open_modal.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", toggleModal);
-closeButton.addEventListener("click", backgroundChange)
+open_modalUser.addEventListener("click", toggleModalUser);
+closeButtonUser.addEventListener("click", toggleModalUser);
+closeButtonUser.addEventListener("click", backgroundChange)
 window.addEventListener("click", windowOnClick);
 
 

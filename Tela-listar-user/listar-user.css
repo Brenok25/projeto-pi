@@ -346,13 +346,13 @@ footer .right img{
     color: #181717;
 }
 
-.close-button {
+.close-button-user {
     cursor: pointer;
     font-size: 12px;
     color: #181717;
 }
 
-.close-button:hover{
+.close-button-user:hover{
     opacity: 0.8;
 }
 
