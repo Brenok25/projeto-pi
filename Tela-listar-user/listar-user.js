@@ -47,7 +47,7 @@ function toggleModalUser() {
 }
 
 function windowOnClick(event) {
-    if (event.target === User) {
+    if (event.target === modalUser) {
         toggleModalUser();
         changeOpacidad.classList.remove("navega-change")
     }
@@ -55,8 +55,34 @@ function windowOnClick(event) {
 
 open_modalUser.addEventListener("click", toggleModalUser);
 closeButtonUser.addEventListener("click", toggleModalUser);
-closeButtonUser.addEventListener("click", backgroundChange)
+closeButtonUser.addEventListener("click", backgroundChange);
 window.addEventListener("click", windowOnClick);
+
+
+//Modal 2 -- editar
+
+var modalEdit = document.querySelector(".modal-edit-user");
+var open_modal_edit = document.querySelector(".open_modal-Edit");
+var closeButton_edit = document.querySelector(".close-button-edit");
+
+function toggleModalEdit() {
+    modalEdit.classList.toggle("show-modal-edit");
+    changeOpacidad.classList.add("navega-change")
+}
+
+function windowOnClick2(event) {
+    if (event.target === modalEdit) {
+        toggleModalEdit();
+        changeOpacidad.classList.remove("navega-change")
+    }
+}
+
+open_modal_edit.addEventListener("click", toggleModalEdit);
+closeButton_edit.addEventListener("click", toggleModalEdit);
+closeButton_edit.addEventListener("click", backgroundChange)
+window.addEventListener("click", windowOnClick2);
+
+
 
 
 
