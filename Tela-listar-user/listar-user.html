@@ -12,7 +12,7 @@
     <div class="container">
 
         <header>
-            <nav>
+            <nav class="navega-color">
                 <input type="checkbox" id="nav-toggle">
                 <div class="logo"> <h1>Ca<span1>l</span1><span>l</span>endar</h1></div>
                <ul class="links">
@@ -55,7 +55,7 @@
                 <div class="three_crud">
                     <img src="./assets/trash.png" alt="">
                     <img src="./assets/magicpen.png" alt="">
-                    <img src="./assets/create-add.png" alt="">
+                    <img src="./assets/create-add.png" class="open_modal" alt="">
                 </div>
     
                 <div class="swith_type">
@@ -131,6 +131,63 @@
                 <img src="./assets/faq.png" alt="">
             </div>
         </footer>
+
+    </div>
+
+    <div class="modais">
+        <div class="modal-cad-user">
+            <div class="modal-content-cad-user">
+    
+                <div class="info_modal">
+    
+                    <h1>Cadastrar Usuario</h1>
+    
+                <div class="formulario">
+                    <form action="#">
+    
+                        <div class="item">
+                            <label for="nome">Nome:</label> <br>
+                            <input type="text" placeholder="Ex: João ninguem" id="nome">
+                        </div>
+    
+                        <div class="item">
+                            <label for="tipo">Tipo:</label> <br>
+                            <select name="#" id="tipo">
+                                <option value="0" disabled selected>Selecione um tipo</option>
+                                <option value="1">Docente</option>
+                                <option value="2">Adiministrador</option>
+                            </select>
+                        </div>
+    
+                        <div class="item">
+                            <label for="matricula">Matricula:</label> <br>
+                            <input type="number" placeholder="Ex: 8880088">
+                        </div>
+    
+                        <div class="item">
+                            <label for="mail">Email:</label> <br>
+                            <input type="email" placeholder="Ex: nome@email.com">
+                        </div>
+    
+                        <div class="item">
+                            <label for="password">Senha:</label> <br>
+                            <input type="password" placeholder="Ex: 123">
+                        </div>
+    
+                        <div class="send">
+                            <input type="submit" value="Cadastrar">
+                        </div>
+                        
+                    </form>
+                </div>
+    
+                <span class="close-button">Cancelar</span>
+                    
+                </div>
+    
+            </div>
+        </div>
+
 
     </div>
 

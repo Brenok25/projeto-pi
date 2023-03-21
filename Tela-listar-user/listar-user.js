@@ -27,4 +27,36 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // ========================================================================
 
+// modais
+
+var modal = document.querySelector(".modal-cad-user");
+var open_modal = document.querySelector(".open_modal");
+var closeButton = document.querySelector(".close-button");
+var changeOpacidad = document.querySelector(".navega-color");
+
+
+// essa function é pura gambiarra, mas sem tempo irmão
+function backgroundChange(){
+  changeOpacidad.classList.remove("navega-change")
+}
+
+function toggleModal() {
+    modal.classList.toggle("show-modal");
+    changeOpacidad.classList.add("navega-change")
+
+}
+
+function windowOnClick(event) {
+    if (event.target === modal) {
+        toggleModal();
+        changeOpacidad.classList.remove("navega-change")
+    }
+}
+
+open_modal.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", toggleModal);
+closeButton.addEventListener("click", backgroundChange)
+window.addEventListener("click", windowOnClick);
+
+
 
