@@ -1,0 +1,57 @@
+.center{
+    justify-content: center;
+    text-align: center;
+    border: 1px solid red;
+    margin: 0 auto;
+
+    align-items: center;
+}
+
+.container {
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 150px;
+    border-radius: 5px;
+  }
+  
+  .button-group {
+    display: flex;
+  }
+  
+  .button {
+    background-color: #ccbfbfd8;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+    margin-left: 5px;
+  }
+  
+  .button.active {
+    background-color: orange;
+    color: white;
+  }
+  
+  .button:hover {
+    opacity: 0.8;
+  }
+  
+  .box {
+    height: 500px;
+    width: 80vw;
+    margin-left: 150px;
+    margin-top: 50px;
+    display: none;
+  }
+  
+  .blue {
+    background-color: blue;
+    display: block;
+  }
+  
+  .red {
+    background-color: red;
+  }
+  
