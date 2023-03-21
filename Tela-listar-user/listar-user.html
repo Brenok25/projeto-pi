@@ -11,7 +11,35 @@
 
     <div class="container">
 
-        <header></header>
+        <header>
+            <nav>
+                <input type="checkbox" id="nav-toggle">
+                <div class="logo"> <h1>Ca<span1>l</span1><span>l</span>endar</h1></div>
+               <ul class="links">
+        
+                <li><a href="#">Home</a></li>
+                   <li><a href="#">Calendário</a></li>
+                   <li><a href="#">Cursos</a></li>
+                   <li><a href="#">Usuarios</a></li>
+                   <li><a href="#">Sair</a></li>
+                   
+                   
+        
+        
+               </ul>
+               <label for="nav-toggle" class="icon-burger">
+                   <div class="line"></div>
+                   <div class="line"></div>
+                   <div class="line"></div>
+               </label>
+            </nav>
+        
+            <label for="nav-toggle" class="icon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>    
+        </header>
 
         <main>
             <div class="actions">
@@ -25,14 +53,16 @@
                 </div>
     
                 <div class="three_crud">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
-                    <img src="#" alt="">
+                    <img src="./assets/trash.png" alt="">
+                    <img src="./assets/magicpen.png" alt="">
+                    <img src="./assets/create-add.png" alt="">
                 </div>
     
                 <div class="swith_type">
-                    <button>Docente</button>
-                    <button>Adimistrador</button>
+                    <div class="button-group">
+                        <button class="button-change active" data-color="orange">Usuário</button>
+                        <button class="button-change" data-color="gray">Adimistrador</button>
+                    </div>
                 </div>
     
             </div>
@@ -40,16 +70,71 @@
             <div class="tables">
                 <!-- as duas tables -->
     
-                <h2>Usuários cadastrados</h2>
+                <div class="table_docente">
+                    <h1>Usuários cadastrados</h1>
+                    <table class="tabela_listagem">
+                        <thead>
+                          <tr>
+                            <th>Nome:</th>
+                            <th>Matrícula:</th>
+                            <th>Email:</th>
+                            <th>Tipo:</th>
+                          </tr>
+                        </thead>
+                        <tbody id="tabela-corpo-user">
+                          <tr>
+                            <td>Exemplo</td>
+                            <td>8884822</td>
+                            <td>mateus@email.com</td>
+                            <td>Docente</td>
+                          </tr>
+
+
+                        </tbody>
+                    </table>
+                </div>
     
-                <div class="table_docente"></div>
-    
-            <div class="table_admin"></div>
+            <div class="table_admin">
+
+                <h1>Adiminstradores cadastrados</h1>
+
+                <table class="tabela_listagem">
+                    <thead>
+                      <tr>
+                        <th>Nome:</th>
+                        <th>Matrícula:</th>
+                        <th>Email:</th>
+                        <th>Tipo:</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tabela-corpo-admin">
+                      <tr>
+                        <td>breno</td>
+                        <td>8884822</td>
+                        <td>mateus@email.com</td>
+                        <td>Docente</td>
+                      </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            
         </main>
 
-        <footer>egr</footer>
+        <footer>
+            <div class="left">
+                <img src="./assets/Img-bola.png" alt="">
+            </div>
+
+            <div class="right">
+                <img src="./assets/faq.png" alt="">
+            </div>
+        </footer>
 
     </div>
+
+    <script src="./listar-user.js"></script>
 
 </body>
 </html>

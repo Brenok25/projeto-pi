@@ -17,26 +17,26 @@
   .button-group {
     display: flex;
   }
+
+.button-group button {
+  background-color: #ccbfbfd8;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in-out;
+  margin-left: 5px;
+}
   
-  .button {
-    background-color: #ccbfbfd8;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: opacity 0.2s ease-in-out;
-    margin-left: 5px;
-  }
+.button.active {
+  background-color: orange;
+  color: white;
+}
   
-  .button.active {
-    background-color: orange;
-    color: white;
-  }
-  
-  .button:hover {
-    opacity: 0.8;
-  }
+.button:hover {
+  opacity: 0.8;
+}
   
   .box {
     height: 500px;
@@ -54,4 +54,3 @@
   .red {
     background-color: red;
   }
-  
