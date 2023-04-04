@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 15vh 70vh 15vh;
+
+    grid-template-areas: 'header header header'
+                'main main aside'
+                'footer  footer footer';
+}
+
+header{
+    background-color: blue;
+    grid-area: header;
+}
+
+main{
+    /* background-color: red; */
+    grid-area: main;
+    margin-left: 5%;
+}
+
+aside{
+    background-color: black;
+    grid-area: aside;
+}
+
+footer{
+    background-color: aqua;
+    grid-area: footer;
+}
+
+
+/* cont-info-turma VAI QUE */
+
+.cont-info-turma{
+    /* background-color: red; */
+    width: 40%;
+    height: 60vh;
+    margin: 2vh 0 2vh 0;
+    padding: .5% 0;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+}
+
+.cont-info-turma ol{
+    list-style: none;
+}
+
+.cont-info-turma ol li{
+    color: blue;
+    font-size: 90%; 
+    margin: 2% 0;
+    padding-left: 1% !important;
+}
+
+.inp-style{
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 3% 1%;
+    width: 100%;
+}
+
+
+/* inputs em linha */
+
+.box-line{
+    display: inline-block;
+    width: 30vh;
+}
+
+.box-line .inp-style{
+    padding: 6%;
+}
+
+.space-line{
+    margin-left: 3%;
+    margin-top: 1%;
+}
+
+/* fechando inputs em linha */
+
+/* UCS cadastradas */
+
+.cont-uc-turma, 
+.cont-info-turma{
+    float: left;
+}
+
+.cont-uc-turma{
+    margin: 1.1% 5%;
+    width: 32%;
+    height: 60vh;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.cont-uc-turma ol{
+    list-style: none;
+    padding: 0 4%;
+}
+
+.cont-uc-turma li{
+    border: 1px solid black;
+    height: 2rem;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding: 1% 2%;
+}
+
+.cont-uc-turma li:first-child{
+    margin-top: 5%;
+}
+
+.cont-uc-turma h3{
+    color: white;
+    border-radius: 10px 10px 0 0;
+    background-color: blue;
+
+    height: 10%;
+    text-align: center;
+    padding: 2%;
+}
